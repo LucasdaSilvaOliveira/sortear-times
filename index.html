@@ -14,12 +14,12 @@
         <section class="section_input">
             <div class="div_input">
                 <label for="nomes">Nomes</label>
-                <input type="text" id="nomes">
+                <input autocomplete="off" type="text" id="nomes">
                 <button onclick="adicionar_nome()">Adicionar</button>
             </div>
             <div class="div_input">
                 <label for="times">Times</label>
-                <input type="text" id="times">
+                <input autocomplete="off" type="text" id="times">
                 <button onclick="adicionar_time()">Adicionar</button>
             </div>
         </section>
@@ -28,8 +28,10 @@
             <div id="times-adicionados"></div>
         </section>
     </div>
-    <button onclick="sortear()">Sortear</button>
-    <div id="sorteio-feito"></div>
+    <button id="btn-sortear" onclick="sortear()">Sortear</button>
+    <div id="sorteio-feito">
+        <img id="img" src="img/load.png" alt="Load">
+    </div>
     <script src="script.js"></script>
 </body>
 

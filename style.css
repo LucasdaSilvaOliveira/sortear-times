@@ -45,3 +45,26 @@ body {
     justify-content: center;
     gap: 150px;
 }
+
+img {
+    margin-top: 30px;
+    width: 60px;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+.adicionar-rodar {
+    animation-name: rodar;
+    display: block;
+}
+
+@keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
