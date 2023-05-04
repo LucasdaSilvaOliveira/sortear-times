@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sortear time</title>
+</head>
+
+<body>
+    <div id="container">
+        <section class="section_input">
+            <div class="div_input">
+                <label for="nomes">Nomes</label>
+                <input type="text" id="nomes">
+                <button onclick="adicionar_nome()">Adicionar</button>
+            </div>
+            <div class="div_input">
+                <label for="times">Times</label>
+                <input type="text" id="times">
+                <button onclick="adicionar_time()">Adicionar</button>
+            </div>
+        </section>
+        <section class="section_sorteados">
+            <div id="nomes-adicionados"></div>
+            <div id="times-adicionados"></div>
+        </section>
+    </div>
+    <button onclick="sortear()">Sortear</button>
+    <div id="sorteio-feito"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

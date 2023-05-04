@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: fit-content;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.div_input input {
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: 90%;
+}
+
+.section_input {
+    display: flex;
+    gap: 10px;
+}
+
+.section_sorteados {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
