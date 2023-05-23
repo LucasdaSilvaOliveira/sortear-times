@@ -6,6 +6,27 @@ const sorteio_feito = document.getElementById('sorteio-feito');
 const img = document.getElementById('img');
 const btn_sortear = document.getElementById('btn-sortear');
 
+const timeSpans = document.querySelectorAll('.span-times');
+const nomeSpans = document.querySelectorAll('.span-nomes');
+
+timeSpans.forEach(time => {
+    time.addEventListener('click', () => {
+        let p = document.createElement('p');
+        p.innerHTML = time.innerHTML;
+        times_adicionados.appendChild(p);
+        timeArray.push(time.innerHTML);
+    })
+})
+
+nomeSpans.forEach(nomes => {
+    nomes.addEventListener('click', () => {
+        let p = document.createElement('p');
+        p.innerHTML = nomes.innerHTML;
+        nomes_adicionados.appendChild(p);
+        nomeArray.push(nomes.innerHTML);
+    })
+})
+
 let nomeArray = [];
 let timeArray = [];
 
