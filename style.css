@@ -57,7 +57,7 @@ body {
 }
 
 img {
-    margin-top: 30px;
+    margin: 30px auto;
     width: 60px;
     animation-timing-function: ease-in-out;
     animation-duration: 1000ms;
